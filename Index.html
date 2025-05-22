@@ -10,8 +10,17 @@
 </head>
 <body>
   <header>
-    <h1>Health care Ayurvedic</h1>
-    <nav>
+    <div style="display: flex; align-items: center; gap: 15px;">
+      <img src="./images/logo.png" alt="Health care Ayurvedic Logo" style="height: 80px;">
+    </div>
+  
+    <!-- Hamburger menu icon for mobile -->
+    <button id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      &#9776; <!-- Unicode hamburger icon -->
+    </button>
+  
+    <!-- Wrap nav links in a container -->
+    <nav id="navLinks" class="nav-links">
       <a href="index.html">Home</a>
       <a href="cart.html">Cart</a>
       <a href="#about">About Us</a>
@@ -20,6 +29,7 @@
       <a href="privacy-policy.html">Privacy Policy</a>
     </nav>
   </header>
+  
   <section class="hero">
     <div class="hero-content">
       <div class="hero-text">
@@ -89,5 +99,18 @@
   </section>
   
   <a href="https://wa.me/919355227798" class="whatsapp-chat" target="_blank">Chat on WhatsApp</a>
+  <script>
+    const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+
+  // For accessibility: toggle aria-expanded
+  const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+  hamburger.setAttribute('aria-expanded', !expanded);
+});
+
+  </script>
 </body>
 </html>

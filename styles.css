@@ -8,7 +8,7 @@ body {
     padding: 0;
   }
   header {
-    background-color: #4caf50;
+    background-color: #0c140c;
     color: white;
     padding: 1em;
     display: flex;
@@ -131,7 +131,7 @@ body {
 @media (max-width: 768px) {
     header {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
     }
     nav {
       margin-top: 0.5em;
@@ -323,3 +323,45 @@ body {
     background: #2e7d32;
   }
   
+  
+ 
+  /* Hide hamburger on desktop */
+#hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Nav default styles */
+nav.nav-links {
+  display: flex;
+  gap: 1em;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  #hamburger {
+    display: block;
+    padding: 0.2rem;
+  }
+
+  nav.nav-links {
+    display: none; /* hidden by default */
+    flex-direction: column;
+    width: 100%;
+    background-color: #0c140c;
+    padding: 1em 0;
+  }
+
+  nav.nav-links.active {
+    display: flex;
+  }
+
+  nav.nav-links a {
+    padding: 0.5em 1em;
+    border-top: 1px solid #2e7d32;
+  }
+}
