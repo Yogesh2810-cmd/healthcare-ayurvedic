@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
       formElement.setAttribute("method", "POST");
       formElement.setAttribute(
         "action",
-        "https://script.google.com/macros/s/AKfycbw8A0WxdPMTV4BsQ68k0-xHe7hYQ6shV0Fc30g--u8ScZ0Nv-EvZkZXXO2RmiSdcxRTrw/exec"
+        "https://script.google.com/macros/s/AKfycbyzjCXmDQOy3CJZLL-hSo5FOxPJ69W9lXDrQ42GEUlMgtht-MAMRiaJqJ4mnw1ETEZRog/exec"
       );
 
       const fields = {
