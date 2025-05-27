@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
       formElement.setAttribute("method", "POST");
       formElement.setAttribute(
         "action",
-        "https://script.google.com/macros/s/AKfycby44GhJTzAqAxW1n4oVCyPKwg3gBmqooVOQucBbwAiYTZi8GXqcG9xZ5Wgrsdl_bXY1/exec"
+        "https://script.google.com/macros/s/AKfycby58Z8RkNUW22TEG8p1FXUqfTc-lIsLN8l3HEGf__85aJD2moMtqEuf99Hm1opBAFX3/exec"
       );
 
       const fields = {
