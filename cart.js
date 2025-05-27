@@ -43,6 +43,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const email = formData.get("email");
     const phone = formData.get("phone");
     const address = formData.get("address");
+    const pincode = formData.get("pincode");
+
     const paymentMethod = formData.get("payment_method");
 
     const submitToSheet = (payment_id = "COD") => {
@@ -58,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
         email,
         phone,
         address,
+        pincode,
         cart: JSON.stringify(cart),
         total,
         payment_id,
